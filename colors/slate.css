@@ -1,13 +1,13 @@
 * {
-	--color-slate-50: oklch(98.4% 0.003 247.858 / var(--color-slate-50-opacity, var(--color-slate-opacity, var(--color-opacity))));
-	--color-slate-100: oklch(96.8% 0.007 247.896 / var(--color-slate-100-opacity, var(--color-slate-opacity, var(--color-opacity))));
-	--color-slate-200: oklch(92.9% 0.013 255.508 / var(--color-slate-200-opacity, var(--color-slate-opacity, var(--color-opacity))));
-	--color-slate-300: oklch(86.9% 0.022 252.894 / var(--color-slate-300-opacity, var(--color-slate-opacity, var(--color-opacity))));
-	--color-slate-400: oklch(70.4% 0.04 256.788 / var(--color-slate-400-opacity, var(--color-slate-opacity, var(--color-opacity))));
-	--color-slate-500: oklch(55.4% 0.046 257.417 / var(--color-slate-500-opacity, var(--color-slate-opacity, var(--color-opacity))));
-	--color-slate-600: oklch(44.6% 0.043 257.281 / var(--color-slate-600-opacity, var(--color-slate-opacity, var(--color-opacity))));
-	--color-slate-700: oklch(37.2% 0.044 257.287 / var(--color-slate-700-opacity, var(--color-slate-opacity, var(--color-opacity))));
-	--color-slate-800: oklch(27.9% 0.041 260.031 / var(--color-slate-800-opacity, var(--color-slate-opacity, var(--color-opacity))));
-	--color-slate-900: oklch(20.8% 0.042 265.755 / var(--color-slate-900-opacity, var(--color-slate-opacity, var(--color-opacity))));
-	--color-slate-950: oklch(12.9% 0.042 264.695 / var(--color-slate-950-opacity, var(--color-slate-opacity, var(--color-opacity))));
+	--color-slate-50: oklch(98.4% 0.003 247.858 / var(--color-slate-50-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
+	--color-slate-100: oklch(96.8% 0.007 247.896 / var(--color-slate-100-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
+	--color-slate-200: oklch(92.9% 0.013 255.508 / var(--color-slate-200-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
+	--color-slate-300: oklch(86.9% 0.022 252.894 / var(--color-slate-300-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
+	--color-slate-400: oklch(70.4% 0.04 256.788 / var(--color-slate-400-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
+	--color-slate-500: oklch(55.4% 0.046 257.417 / var(--color-slate-500-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
+	--color-slate-600: oklch(44.6% 0.043 257.281 / var(--color-slate-600-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
+	--color-slate-700: oklch(37.2% 0.044 257.287 / var(--color-slate-700-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
+	--color-slate-800: oklch(27.9% 0.041 260.031 / var(--color-slate-800-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
+	--color-slate-900: oklch(20.8% 0.042 265.755 / var(--color-slate-900-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
+	--color-slate-950: oklch(12.9% 0.042 264.695 / var(--color-slate-950-opacity, var(--color-slate-opacity, var(--color-opacity, 100%))));
 }

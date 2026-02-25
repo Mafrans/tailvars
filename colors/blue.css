@@ -1,13 +1,13 @@
 * {
-	--color-blue-50: oklch(97% 0.014 254.604 / var(--color-blue-50-opacity, var(--color-blue-opacity, var(--color-opacity))));
-	--color-blue-100: oklch(93.2% 0.032 255.585 / var(--color-blue-100-opacity, var(--color-blue-opacity, var(--color-opacity))));
-	--color-blue-200: oklch(88.2% 0.059 254.128 / var(--color-blue-200-opacity, var(--color-blue-opacity, var(--color-opacity))));
-	--color-blue-300: oklch(80.9% 0.105 251.813 / var(--color-blue-300-opacity, var(--color-blue-opacity, var(--color-opacity))));
-	--color-blue-400: oklch(70.7% 0.165 254.624 / var(--color-blue-400-opacity, var(--color-blue-opacity, var(--color-opacity))));
-	--color-blue-500: oklch(62.3% 0.214 259.815 / var(--color-blue-500-opacity, var(--color-blue-opacity, var(--color-opacity))));
-	--color-blue-600: oklch(54.6% 0.245 262.881 / var(--color-blue-600-opacity, var(--color-blue-opacity, var(--color-opacity))));
-	--color-blue-700: oklch(48.8% 0.243 264.376 / var(--color-blue-700-opacity, var(--color-blue-opacity, var(--color-opacity))));
-	--color-blue-800: oklch(42.4% 0.199 265.638 / var(--color-blue-800-opacity, var(--color-blue-opacity, var(--color-opacity))));
-	--color-blue-900: oklch(37.9% 0.146 265.522 / var(--color-blue-900-opacity, var(--color-blue-opacity, var(--color-opacity))));
-	--color-blue-950: oklch(28.2% 0.091 267.935 / var(--color-blue-950-opacity, var(--color-blue-opacity, var(--color-opacity))));
+	--color-blue-50: oklch(97% 0.014 254.604 / var(--color-blue-50-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
+	--color-blue-100: oklch(93.2% 0.032 255.585 / var(--color-blue-100-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
+	--color-blue-200: oklch(88.2% 0.059 254.128 / var(--color-blue-200-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
+	--color-blue-300: oklch(80.9% 0.105 251.813 / var(--color-blue-300-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
+	--color-blue-400: oklch(70.7% 0.165 254.624 / var(--color-blue-400-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
+	--color-blue-500: oklch(62.3% 0.214 259.815 / var(--color-blue-500-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
+	--color-blue-600: oklch(54.6% 0.245 262.881 / var(--color-blue-600-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
+	--color-blue-700: oklch(48.8% 0.243 264.376 / var(--color-blue-700-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
+	--color-blue-800: oklch(42.4% 0.199 265.638 / var(--color-blue-800-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
+	--color-blue-900: oklch(37.9% 0.146 265.522 / var(--color-blue-900-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
+	--color-blue-950: oklch(28.2% 0.091 267.935 / var(--color-blue-950-opacity, var(--color-blue-opacity, var(--color-opacity, 100%))));
 }

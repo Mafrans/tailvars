@@ -1,13 +1,13 @@
 * {
-	--color-mauve-50: oklch(98.5% 0 0 / var(--color-mauve-50-opacity, var(--color-mauve-opacity, var(--color-opacity))));
-	--color-mauve-100: oklch(96% 0.003 325.6 / var(--color-mauve-100-opacity, var(--color-mauve-opacity, var(--color-opacity))));
-	--color-mauve-200: oklch(92.2% 0.005 325.62 / var(--color-mauve-200-opacity, var(--color-mauve-opacity, var(--color-opacity))));
-	--color-mauve-300: oklch(86.5% 0.012 325.68 / var(--color-mauve-300-opacity, var(--color-mauve-opacity, var(--color-opacity))));
-	--color-mauve-400: oklch(71.1% 0.019 323.02 / var(--color-mauve-400-opacity, var(--color-mauve-opacity, var(--color-opacity))));
-	--color-mauve-500: oklch(54.2% 0.034 322.5 / var(--color-mauve-500-opacity, var(--color-mauve-opacity, var(--color-opacity))));
-	--color-mauve-600: oklch(43.5% 0.029 321.78 / var(--color-mauve-600-opacity, var(--color-mauve-opacity, var(--color-opacity))));
-	--color-mauve-700: oklch(36.4% 0.029 323.89 / var(--color-mauve-700-opacity, var(--color-mauve-opacity, var(--color-opacity))));
-	--color-mauve-800: oklch(26.3% 0.024 320.12 / var(--color-mauve-800-opacity, var(--color-mauve-opacity, var(--color-opacity))));
-	--color-mauve-900: oklch(21.2% 0.019 322.12 / var(--color-mauve-900-opacity, var(--color-mauve-opacity, var(--color-opacity))));
-	--color-mauve-950: oklch(14.5% 0.008 326 / var(--color-mauve-950-opacity, var(--color-mauve-opacity, var(--color-opacity))));
+	--color-mauve-50: oklch(98.5% 0 0 / var(--color-mauve-50-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
+	--color-mauve-100: oklch(96% 0.003 325.6 / var(--color-mauve-100-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
+	--color-mauve-200: oklch(92.2% 0.005 325.62 / var(--color-mauve-200-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
+	--color-mauve-300: oklch(86.5% 0.012 325.68 / var(--color-mauve-300-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
+	--color-mauve-400: oklch(71.1% 0.019 323.02 / var(--color-mauve-400-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
+	--color-mauve-500: oklch(54.2% 0.034 322.5 / var(--color-mauve-500-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
+	--color-mauve-600: oklch(43.5% 0.029 321.78 / var(--color-mauve-600-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
+	--color-mauve-700: oklch(36.4% 0.029 323.89 / var(--color-mauve-700-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
+	--color-mauve-800: oklch(26.3% 0.024 320.12 / var(--color-mauve-800-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
+	--color-mauve-900: oklch(21.2% 0.019 322.12 / var(--color-mauve-900-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
+	--color-mauve-950: oklch(14.5% 0.008 326 / var(--color-mauve-950-opacity, var(--color-mauve-opacity, var(--color-opacity, 100%))));
 }
