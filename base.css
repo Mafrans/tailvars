@@ -1,0 +1,314 @@
+/** biome-ignore-all lint/suspicious/noUnknownAtRules: Custom media rules are not officially baseline CSS yet. */
+
+/* Media Queries */
+@custom-media --screen-xs (max-width: 359px);
+@custom-media --screen-sm (min-width: 360px) and (max-width: 479px);
+@custom-media --screen-md (min-width: 480px) and (max-width: 767px);
+@custom-media --screen-lg (min-width: 768px) and (max-width: 1023px);
+@custom-media --screen-xl (min-width: 1024px);
+
+/* Shapes */
+:root {
+	--rounded-xs: 0.25rem;
+	--rounded-sm: 0.375rem;
+	--rounded-md: 0.5rem;
+	--rounded-lg: 0.75rem;
+	--rounded-xl: 1rem;
+	--rounded-full: calc(infinity * 1px);
+	--screen-width-xs: 360px;
+	--screen-width-sm: 480px;
+	--screen-width-md: 768px;
+	--screen-width-lg: 1024px;
+	--screen-width-xl: 1280px;
+}
+
+/* Effects */
+:root {
+	--blur-xs: blur(4px);
+	--blur-sm: blur(8px);
+	--blur-md: blur(12px);
+	--blur-lg: blur(16px);
+	--blur-xl: blur(24px);
+	--blur-xxl: blur(40px);
+	--brighten: brightness(125%);
+	--darken: brightness(75%);
+	--saturate: saturate(150%);
+	--desaturate: saturate(50%);
+}
+
+* {
+	--shadow-xxs: 0 1px var(--shadow-color, rgb(0 0 0 / 0.05));
+	--shadow-xs: 0 1px 2px 0 var(--shadow-color, rgb(0 0 0 / 0.05));
+	--shadow-sm: 0 1px 3px 0 var(--shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--shadow-color, rgb(0 0 0 / 0.1));
+	--shadow-md: 0 4px 6px -1px var(--shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--shadow-color, rgb(0 0 0 / 0.1));
+	--shadow-lg: 0 10px 15px -3px var(--shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--shadow-color, rgb(0 0 0 / 0.1));
+	--shadow-xl: 0 20px 25px -5px var(--shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--shadow-color, rgb(0 0 0 / 0.1));
+	--shadow-xxl: 0 25px 50px -12px var(--shadow-color, rgb(0 0 0 / 0.25));
+	--text-shadow-xxs: 0px 1px 0px var(--shadow-color, rgb(0 0 0 / 0.15));
+	--text-shadow-xs: 0px 1px 1px var(--shadow-color, rgb(0 0 0 / 0.2));
+	--text-shadow-sm:
+		0px 1px 0px var(--shadow-color, rgb(0 0 0 / 0.075)), 0px 1px 1px var(--shadow-color, rgb(0 0 0 / 0.075)),
+		0px 2px 2px var(--shadow-color, rgb(0 0 0 / 0.075));
+	--text-shadow-md:
+		0px 1px 1px var(--shadow-color, rgb(0 0 0 / 0.1)), 0px 1px 2px var(--shadow-color, rgb(0 0 0 / 0.1)), 0px 2px 4px var(--shadow-color, rgb(0 0 0 / 0.1));
+	--text-shadow-lg:
+		0px 1px 2px var(--shadow-color, rgb(0 0 0 / 0.1)), 0px 3px 2px var(--shadow-color, rgb(0 0 0 / 0.1)), 0px 4px 8px var(--shadow-color, rgb(0 0 0 / 0.1));
+	--drop-shadow-xs: drop-shadow(0 1px 1px var(--shadow-color, rgb(0 0 0 / 0.05)));
+	--drop-shadow-sm: drop-shadow(0 1px 2px var(--shadow-color, rgb(0 0 0 / 0.15)));
+	--drop-shadow-md: drop-shadow(0 3px 3px var(--shadow-color, rgb(0 0 0 / 0.12)));
+	--drop-shadow-lg: drop-shadow(0 4px 4px var(--shadow-color, rgb(0 0 0 / 0.15)));
+	--drop-shadow-xl: drop-shadow(0 9px 7px var(--shadow-color, rgb(0 0 0 / 0.1)));
+}
+
+/* Transitions */
+:root {
+	--ease-in-sine: cubic-bezier(0.12, 0, 0.39, 0);
+	--ease-out-sine: cubic-bezier(0.61, 1, 0.88, 1);
+	--ease-both-sine: cubic-bezier(0.37, 0, 0.63, 1);
+	--ease-in-quadratic: cubic-bezier(0.11, 0, 0.5, 0);
+	--ease-out-quadratic: cubic-bezier(0.5, 1, 0.89, 1);
+	--ease-both-quadratic: cubic-bezier(0.45, 0, 0.55, 1);
+	--ease-in-cubic: cubic-bezier(0.32, 0, 0.67, 0);
+	--ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
+	--ease-both-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+	--ease-in-quartic: cubic-bezier(0.5, 0, 0.75, 0);
+	--ease-out-quartic: cubic-bezier(0.25, 1, 0.5, 1);
+	--ease-both-quartic: cubic-bezier(0.76, 0, 0.24, 1);
+	--ease-in-quintic: cubic-bezier(0.64, 0, 0.78, 0);
+	--ease-out-quintic: cubic-bezier(0.22, 1, 0.36, 1);
+	--ease-both-quintic: cubic-bezier(0.83, 0, 0.17, 1);
+	--ease-in-exponential: cubic-bezier(0.7, 0, 0.84, 0);
+	--ease-out-exponential: cubic-bezier(0.16, 1, 0.3, 1);
+	--ease-both-exponential: cubic-bezier(0.87, 0, 0.13, 1);
+	--ease-in-circular: cubic-bezier(0.55, 0, 1, 0.45);
+	--ease-out-circular: cubic-bezier(0, 0.55, 0.45, 1);
+	--ease-both-circular: cubic-bezier(0.85, 0, 0.15, 1);
+	--ease-in-overshoot: cubic-bezier(0.36, 0, 0.66, -0.56);
+	--ease-out-overshoot: cubic-bezier(0.34, 1.56, 0.64, 1);
+	--ease-both-overshoot: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+* {
+	--ease-in: var(--ease-in-quadratic);
+	--ease-out: var(--ease-out-quadratic);
+	--ease-both: var(--ease-both-quadratic);
+	--transition-linear:
+		color 0.125s linear, background 0.125s linear, border 0.125s linear,
+		outline 0.125s linear, text-decoration 0.125s linear,
+		opacity 0.125s linear, box-shadow 0.125s linear,
+		transform 0.125s linear, filter 0.125s linear,
+		backdrop-filter 0.125s linear, margin 0.125s linear,
+		padding 0.125s linear, top 0.125s linear, left 0.125s linear,
+		right 0.125s linear, bottom 0.125s linear, inset 0.125s linear;
+	--transition-linear-slow:
+		color 0.25s linear, background 0.25s linear, border 0.25s linear,
+		outline 0.25s linear, text-decoration 0.25s linear,
+		opacity 0.25s linear, box-shadow 0.25s linear, transform 0.25s linear,
+		filter 0.25s linear, backdrop-filter 0.25s linear, margin 0.25s linear,
+		padding 0.25s linear, top 0.25s linear, left 0.25s linear,
+		right 0.25s linear, bottom 0.25s linear, inset 0.25s linear;
+	--transition-linear-quick:
+		color 0.075s linear, background 0.075s linear, border 0.075s linear,
+		outline 0.075s linear, text-decoration 0.075s linear,
+		opacity 0.075s linear, box-shadow 0.075s linear,
+		transform 0.075s linear, filter 0.075s linear,
+		backdrop-filter 0.075s linear, margin 0.075s linear,
+		padding 0.075s linear, top 0.075s linear, left 0.075s linear,
+		right 0.075s linear, bottom 0.075s linear, inset 0.075s linear;
+	--transition-in:
+		color 0.125s var(--ease-in), background 0.125s var(--ease-in),
+		border 0.125s var(--ease-in), outline 0.125s var(--ease-in),
+		text-decoration 0.125s var(--ease-in), opacity 0.125s var(--ease-in),
+		box-shadow 0.125s var(--ease-in), transform 0.125s var(--ease-in),
+		filter 0.125s var(--ease-in), backdrop-filter 0.125s var(--ease-in),
+		margin 0.125s var(--ease-in), padding 0.125s var(--ease-in),
+		top 0.125s var(--ease-in), left 0.125s var(--ease-in),
+		right 0.125s var(--ease-in), bottom 0.125s var(--ease-in),
+		inset 0.125s var(--ease-in);
+	--transition-in-slow:
+		color 0.25s var(--ease-in), background 0.25s var(--ease-in),
+		border 0.25s var(--ease-in), outline 0.25s var(--ease-in),
+		text-decoration 0.25s var(--ease-in), opacity 0.25s var(--ease-in),
+		box-shadow 0.25s var(--ease-in), transform 0.25s var(--ease-in),
+		filter 0.25s var(--ease-in), backdrop-filter 0.25s var(--ease-in),
+		margin 0.25s var(--ease-in), padding 0.25s var(--ease-in),
+		top 0.25s var(--ease-in), left 0.25s var(--ease-in),
+		right 0.25s var(--ease-in), bottom 0.25s var(--ease-in),
+		inset 0.25s var(--ease-in);
+	--transition-in-quick:
+		color 0.075 var(--ease-in), background 0.075 var(--ease-in),
+		border 0.075 var(--ease-in), outline 0.075 var(--ease-in),
+		text-decoration 0.075 var(--ease-in), opacity 0.075 var(--ease-in),
+		box-shadow 0.075 var(--ease-in), transform 0.075 var(--ease-in),
+		filter 0.075 var(--ease-in), backdrop-filter 0.075 var(--ease-in),
+		margin 0.075 var(--ease-in), padding 0.075 var(--ease-in),
+		top 0.075 var(--ease-in), left 0.075 var(--ease-in),
+		right 0.075 var(--ease-in), bottom 0.075 var(--ease-in),
+		inset 0.075 var(--ease-in);
+	--transition-out:
+		color 0.125s var(--ease-out), background 0.125s var(--ease-out),
+		border 0.125s var(--ease-out), outline 0.125s var(--ease-out),
+		text-decoration 0.125s var(--ease-out), opacity 0.125s var(--ease-out),
+		box-shadow 0.125s var(--ease-out), transform 0.125s var(--ease-out),
+		filter 0.125s var(--ease-out), backdrop-filter 0.125s var(--ease-out),
+		margin 0.125s var(--ease-out), padding 0.125s var(--ease-out),
+		top 0.125s var(--ease-out), left 0.125s var(--ease-out),
+		right 0.125s var(--ease-out), bottom 0.125s var(--ease-out),
+		inset 0.125s var(--ease-out);
+	--transition-out-slow:
+		color 0.25s var(--ease-out), background 0.25s var(--ease-out),
+		border 0.25s var(--ease-out), outline 0.25s var(--ease-out),
+		text-decoration 0.25s var(--ease-out), opacity 0.25s var(--ease-out),
+		box-shadow 0.25s var(--ease-out), transform 0.25s var(--ease-out),
+		filter 0.25s var(--ease-out), backdrop-filter 0.25s var(--ease-out),
+		margin 0.25s var(--ease-out), padding 0.25s var(--ease-out),
+		top 0.25s var(--ease-out), left 0.25s var(--ease-out),
+		right 0.25s var(--ease-out), bottom 0.25s var(--ease-out),
+		inset 0.25s var(--ease-out);
+	--transition-out-quick:
+		color 0.075s var(--ease-out), background 0.075s var(--ease-out),
+		border 0.075s var(--ease-out), outline 0.075s var(--ease-out),
+		text-decoration 0.075s var(--ease-out), opacity 0.075s var(--ease-out),
+		box-shadow 0.075s var(--ease-out), transform 0.075s var(--ease-out),
+		filter 0.075s var(--ease-out), backdrop-filter 0.075s var(--ease-out),
+		margin 0.075s var(--ease-out), padding 0.075s var(--ease-out),
+		top 0.075s var(--ease-out), left 0.075s var(--ease-out),
+		right 0.075s var(--ease-out), bottom 0.075s var(--ease-out),
+		inset 0.075s var(--ease-out);
+	--transition-both:
+		color 0.125s var(--ease-both), background 0.125s var(--ease-both),
+		border 0.125s var(--ease-both), outline 0.125s var(--ease-both),
+		text-decoration 0.125s var(--ease-both),
+		opacity 0.125s var(--ease-both), box-shadow 0.125s var(--ease-both),
+		transform 0.125s var(--ease-both), filter 0.125s var(--ease-both),
+		backdrop-filter 0.125s var(--ease-both), margin 0.125s var(--ease-both),
+		padding 0.125s var(--ease-both), top 0.125s var(--ease-both),
+		left 0.125s var(--ease-both), right 0.125s var(--ease-both),
+		bottom 0.125s var(--ease-both), inset 0.125s var(--ease-both);
+	--transition-both-slow:
+		color 0.25s var(--ease-both), background 0.25s var(--ease-both),
+		border 0.25s var(--ease-both), outline 0.25s var(--ease-both),
+		text-decoration 0.25s var(--ease-both), opacity 0.25s var(--ease-both),
+		box-shadow 0.25s var(--ease-both), transform 0.25s var(--ease-both),
+		filter 0.25s var(--ease-both), backdrop-filter 0.25s var(--ease-both),
+		margin 0.25s var(--ease-both), padding 0.25s var(--ease-both),
+		top 0.25s var(--ease-both), left 0.25s var(--ease-both),
+		right 0.25s var(--ease-both), bottom 0.25s var(--ease-both),
+		inset 0.25s var(--ease-both);
+	--transition-both-quick:
+		color 0.075s var(--ease-both), background 0.075s var(--ease-both),
+		border 0.075s var(--ease-both), outline 0.075s var(--ease-both),
+		text-decoration 0.075s var(--ease-both),
+		opacity 0.075s var(--ease-both), box-shadow 0.075s var(--ease-both),
+		transform 0.075s var(--ease-both), filter 0.075s var(--ease-both),
+		backdrop-filter 0.075s var(--ease-both), margin 0.075s var(--ease-both),
+		padding 0.075s var(--ease-both), top 0.075s var(--ease-both),
+		left 0.075s var(--ease-both), right 0.075s var(--ease-both),
+		bottom 0.075s var(--ease-both), inset 0.075s var(--ease-both);
+	--transition: var(--transition-out);
+}
+
+/* Typography */
+:root {
+	--font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	--font-size-xs: 0.75rem;
+	--font-size-sm: 0.875rem;
+	--font-size-md: 1rem;
+	--font-size-lg: 1.25rem;
+	--font-size-xl: 1.5rem;
+	--font-size-2xl: 2rem;
+	--font-size-3xl: 3rem;
+	--font-size-fluid-xs: clamp(0.625rem, 0.582rem + 0.217vw, 0.75rem);
+	--font-size-fluid-sm: clamp(0.75rem, 0.707rem + 0.217vw, 0.875rem);
+	--font-size-fluid-md: clamp(0.875rem, 0.832rem + 0.217vw, 1rem);
+	--font-size-fluid-lg: clamp(1rem, 0.957rem + 0.217vw, 1.125rem);
+	--font-size-fluid-xl: clamp(1.25rem, 1.163rem + 0.435vw, 1.5rem);
+	--font-size-fluid-2xl: clamp(1.5rem, 1.326rem + 0.87vw, 2rem);
+	--font-size-fluid-3xl: clamp(2rem, 1.652rem + 1.739vw, 3rem);
+	--font-body-weight: 400;
+	--font-heading-weight: 600;
+}
+
+* {
+	--font-body: var(--font-sans);
+	--font-heading: var(--font-sans);
+	--font-body-xs: var(--font-body-weight) var(--font-size-xs) / 1.6 var(--font-body);
+	--font-body-sm: var(--font-body-weight) var(--font-size-sm) / 1.5 var(--font-body);
+	--font-body-md: var(--font-body-weight) var(--font-size-md) / 1.4 var(--font-body);
+	--font-body-lg: var(--font-body-weight) var(--font-size-lg) / 1.3 var(--font-body);
+	--font-body-xl: var(--font-body-weight) var(--font-size-xl) / 1.25 var(--font-body);
+	--font-body-2xl: var(--font-body-weight) var(--font-size-2xl) / 1.1 var(--font-body);
+	--font-body-3xl: var(--font-body-weight) var(--font-size-3xl) / 1.1 var(--font-body);
+	--font-body-fluid-xs: var(--font-body-weight) var(--font-size-fluid-xs) / 1.6 var(--font-body);
+	--font-body-fluid-sm: var(--font-body-weight) var(--font-size-fluid-sm) / 1.5 var(--font-body);
+	--font-body-fluid-md: var(--font-body-weight) var(--font-size-fluid-md) / 1.4 var(--font-body);
+	--font-body-fluid-lg: var(--font-body-weight) var(--font-size-fluid-lg) / 1.3 var(--font-body);
+	--font-body-fluid-xl: var(--font-body-weight) var(--font-size-fluid-xl) / 1.25 var(--font-body);
+	--font-body-fluid-2xl: var(--font-body-weight) var(--font-size-fluid-2xl) / 1.1 var(--font-body);
+	--font-body-fluid-3xl: var(--font-body-weight) var(--font-size-fluid-3xl) / 1.1 var(--font-body);
+	--font-heading-xs: var(--font-body-weight) var(--font-size-xs) / 1.6 var(--font-heading);
+	--font-heading-sm: var(--font-body-weight) var(--font-size-sm) / 1.5 var(--font-heading);
+	--font-heading-md: var(--font-body-weight) var(--font-size-md) / 1.4 var(--font-heading);
+	--font-heading-lg: var(--font-body-weight) var(--font-size-lg) / 1.3 var(--font-heading);
+	--font-heading-xl: var(--font-body-weight) var(--font-size-xl) / 1.25 var(--font-heading);
+	--font-heading-2xl: var(--font-body-weight) var(--font-size-2xl) / 1.1 var(--font-heading);
+	--font-heading-3xl: var(--font-body-weight) var(--font-size-3xl) / 1.1 var(--font-heading);
+	--font-heading-fluid-xs: var(--font-body-weight) var(--font-size-fluid-xs) / 1.6 var(--font-heading);
+	--font-heading-fluid-sm: var(--font-body-weight) var(--font-size-fluid-sm) / 1.5 var(--font-heading);
+	--font-heading-fluid-md: var(--font-body-weight) var(--font-size-fluid-md) / 1.4 var(--font-heading);
+	--font-heading-fluid-lg: var(--font-body-weight) var(--font-size-fluid-lg) / 1.3 var(--font-heading);
+	--font-heading-fluid-xl: var(--font-body-weight) var(--font-size-fluid-xl) / 1.25 var(--font-heading);
+	--font-heading-fluid-2xl: var(--font-body-weight) var(--font-size-fluid-2xl) / 1.1 var(--font-heading);
+	--font-heading-fluid-3xl: var(--font-body-weight) var(--font-size-fluid-3xl) / 1.1 var(--font-heading);
+}
+
+/* Spacing */
+:root {
+	--size-0: 0rem;
+	--size-1: 0.25rem;
+	--size-2: 0.5rem;
+	--size-3: 0.75rem;
+	--size-4: 1rem;
+	--size-5: 1.25rem;
+	--size-6: 1.5rem;
+	--size-7: 1.75rem;
+	--size-8: 2rem;
+	--size-9: 2.25rem;
+	--size-10: 2.5rem;
+	--size-11: 2.75rem;
+	--size-12: 3rem;
+	--size-14: 3.5rem;
+	--size-16: 4rem;
+	--size-18: 4.5rem;
+	--size-20: 5rem;
+	--size-22: 5.5rem;
+	--size-24: 6rem;
+	--size-28: 7rem;
+	--size-32: 8rem;
+	--size-36: 9rem;
+	--size-40: 10rem;
+	--size-44: 11rem;
+	--size-48: 12rem;
+	--size-52: 13rem;
+	--size-56: 14rem;
+	--size-60: 15rem;
+	--size-64: 16rem;
+	--size-68: 17rem;
+	--size-72: 18rem;
+	--size-76: 19rem;
+	--size-80: 20rem;
+	--size-84: 21rem;
+	--size-88: 22rem;
+	--size-92: 23rem;
+	--size-96: 24rem;
+	--size-100: 25rem;
+	--size-104: 26rem;
+	--size-108: 27rem;
+	--size-112: 28rem;
+	--size-116: 29rem;
+	--size-120: 30rem;
+	--size-124: 31rem;
+	--size-128: 32rem;
+}

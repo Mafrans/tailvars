@@ -1,0 +1,3 @@
+* {
+	--color-white: rgb(255 255 255 / var(--color-white-opacity, var(--color-opacity, 100%)));
+}

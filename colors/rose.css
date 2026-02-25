@@ -1,0 +1,13 @@
+* {
+	--color-rose-50: oklch(96.9% 0.015 12.422 / var(--color-rose-50-opacity, var(--color-rose-opacity, var(--color-opacity))));
+	--color-rose-100: oklch(94.1% 0.03 12.58 / var(--color-rose-100-opacity, var(--color-rose-opacity, var(--color-opacity))));
+	--color-rose-200: oklch(89.2% 0.058 10.001 / var(--color-rose-200-opacity, var(--color-rose-opacity, var(--color-opacity))));
+	--color-rose-300: oklch(81% 0.117 11.638 / var(--color-rose-300-opacity, var(--color-rose-opacity, var(--color-opacity))));
+	--color-rose-400: oklch(71.2% 0.194 13.428 / var(--color-rose-400-opacity, var(--color-rose-opacity, var(--color-opacity))));
+	--color-rose-500: oklch(64.5% 0.246 16.439 / var(--color-rose-500-opacity, var(--color-rose-opacity, var(--color-opacity))));
+	--color-rose-600: oklch(58.6% 0.253 17.585 / var(--color-rose-600-opacity, var(--color-rose-opacity, var(--color-opacity))));
+	--color-rose-700: oklch(51.4% 0.222 16.935 / var(--color-rose-700-opacity, var(--color-rose-opacity, var(--color-opacity))));
+	--color-rose-800: oklch(45.5% 0.188 13.697 / var(--color-rose-800-opacity, var(--color-rose-opacity, var(--color-opacity))));
+	--color-rose-900: oklch(41% 0.159 10.272 / var(--color-rose-900-opacity, var(--color-rose-opacity, var(--color-opacity))));
+	--color-rose-950: oklch(27.1% 0.105 12.094 / var(--color-rose-950-opacity, var(--color-rose-opacity, var(--color-opacity))));
+}

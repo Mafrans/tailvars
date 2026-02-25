@@ -1,0 +1,13 @@
+* {
+	--color-cyan-50: oklch(98.4% 0.019 200.873 / var(--color-cyan-50-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+	--color-cyan-100: oklch(95.6% 0.045 203.388 / var(--color-cyan-100-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+	--color-cyan-200: oklch(91.7% 0.08 205.041 / var(--color-cyan-200-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+	--color-cyan-300: oklch(86.5% 0.127 207.078 / var(--color-cyan-300-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+	--color-cyan-400: oklch(78.9% 0.154 211.53 / var(--color-cyan-400-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+	--color-cyan-500: oklch(71.5% 0.143 215.221 / var(--color-cyan-500-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+	--color-cyan-600: oklch(60.9% 0.126 221.723 / var(--color-cyan-600-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+	--color-cyan-700: oklch(52% 0.105 223.128 / var(--color-cyan-700-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+	--color-cyan-800: oklch(45% 0.085 224.283 / var(--color-cyan-800-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+	--color-cyan-900: oklch(39.8% 0.07 227.392 / var(--color-cyan-900-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+	--color-cyan-950: oklch(30.2% 0.056 229.695 / var(--color-cyan-950-opacity, var(--color-cyan-opacity, var(--color-opacity))));
+}

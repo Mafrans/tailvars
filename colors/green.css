@@ -1,0 +1,13 @@
+* {
+	--color-green-50: oklch(98.2% 0.018 155.826 / var(--color-green-50-opacity, var(--color-green-opacity, var(--color-opacity))));
+	--color-green-100: oklch(96.2% 0.044 156.743 / var(--color-green-100-opacity, var(--color-green-opacity, var(--color-opacity))));
+	--color-green-200: oklch(92.5% 0.084 155.995 / var(--color-green-200-opacity, var(--color-green-opacity, var(--color-opacity))));
+	--color-green-300: oklch(87.1% 0.15 154.449 / var(--color-green-300-opacity, var(--color-green-opacity, var(--color-opacity))));
+	--color-green-400: oklch(79.2% 0.209 151.711 / var(--color-green-400-opacity, var(--color-green-opacity, var(--color-opacity))));
+	--color-green-500: oklch(72.3% 0.219 149.579 / var(--color-green-500-opacity, var(--color-green-opacity, var(--color-opacity))));
+	--color-green-600: oklch(62.7% 0.194 149.214 / var(--color-green-600-opacity, var(--color-green-opacity, var(--color-opacity))));
+	--color-green-700: oklch(52.7% 0.154 150.069 / var(--color-green-700-opacity, var(--color-green-opacity, var(--color-opacity))));
+	--color-green-800: oklch(44.8% 0.119 151.328 / var(--color-green-800-opacity, var(--color-green-opacity, var(--color-opacity))));
+	--color-green-900: oklch(39.3% 0.095 152.535 / var(--color-green-900-opacity, var(--color-green-opacity, var(--color-opacity))));
+	--color-green-950: oklch(26.6% 0.065 152.934 / var(--color-green-950-opacity, var(--color-green-opacity, var(--color-opacity))));
+}

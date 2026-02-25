@@ -1,0 +1,13 @@
+* {
+	--color-purple-50: oklch(97.7% 0.014 308.299 / var(--color-purple-50-opacity, var(--color-purple-opacity, var(--color-opacity))));
+	--color-purple-100: oklch(94.6% 0.033 307.174 / var(--color-purple-100-opacity, var(--color-purple-opacity, var(--color-opacity))));
+	--color-purple-200: oklch(90.2% 0.063 306.703 / var(--color-purple-200-opacity, var(--color-purple-opacity, var(--color-opacity))));
+	--color-purple-300: oklch(82.7% 0.119 306.383 / var(--color-purple-300-opacity, var(--color-purple-opacity, var(--color-opacity))));
+	--color-purple-400: oklch(71.4% 0.203 305.504 / var(--color-purple-400-opacity, var(--color-purple-opacity, var(--color-opacity))));
+	--color-purple-500: oklch(62.7% 0.265 303.9 / var(--color-purple-500-opacity, var(--color-purple-opacity, var(--color-opacity))));
+	--color-purple-600: oklch(55.8% 0.288 302.321 / var(--color-purple-600-opacity, var(--color-purple-opacity, var(--color-opacity))));
+	--color-purple-700: oklch(49.6% 0.265 301.924 / var(--color-purple-700-opacity, var(--color-purple-opacity, var(--color-opacity))));
+	--color-purple-800: oklch(43.8% 0.218 303.724 / var(--color-purple-800-opacity, var(--color-purple-opacity, var(--color-opacity))));
+	--color-purple-900: oklch(38.1% 0.176 304.987 / var(--color-purple-900-opacity, var(--color-purple-opacity, var(--color-opacity))));
+	--color-purple-950: oklch(29.1% 0.149 302.717 / var(--color-purple-950-opacity, var(--color-purple-opacity, var(--color-opacity))));
+}
