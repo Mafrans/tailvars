@@ -23,3 +23,7 @@ The package is ~13kb gzipped, which is a relatively small size, but if you need 
 ## Documentation
 
 To be continued...
+
+## Known bugs
+
+`--color-opacity` does not work as expected, and always falls back to 100%.
