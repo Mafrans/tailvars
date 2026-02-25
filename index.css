@@ -1,2 +1,2 @@
-@import "base";
-@import "colors";
+@import "./base.css";
+@import "./colors/index.css";
