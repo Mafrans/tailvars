@@ -1,0 +1,29 @@
+{
+  "name": "tailvars",
+  "version": "1.0.0",
+  "description": "A collection of tailwind-inspired css custom properties",
+  "keywords": [
+    "css",
+    "custom",
+    "properties",
+    "variables",
+    "css",
+    "variables",
+    "tailwind",
+    "tailwindcss",
+    "design",
+    "system"
+  ],
+  "homepage": "https://github.com/Mafrans/tailvars#readme",
+  "bugs": {
+    "url": "https://github.com/Mafrans/tailvars/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mafrans/tailvars.git"
+  },
+  "license": "MIT",
+  "author": "Mafrans",
+  "type": "css",
+  "main": "index.css"
+}
