@@ -1,0 +1,22 @@
+@import "tailvars";
+@import "preflight.css";
+
+.container {
+	--gap-size: var(--size-3);
+
+	display: grid;
+	gap: 0 var(--gap-size);
+	grid-template-columns: 1fr min(calc(100% - 2 * var(--gap-size)), var(--screen-width-lg)) 1fr;
+
+	& > * {
+		grid-column: 2;
+	}
+
+	& .no-container {
+		grid-column: 1 / -1;
+	}
+
+	@media (--screen-lg) or (--screen-md) or (--screen-sm) or (--screen-xs) {
+		grid-template-columns: 1fr min(calc(100% - 2 * var(--gap-size)), var(--screen-width-md)) 1fr;
+	}
+}

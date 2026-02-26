@@ -5,6 +5,13 @@
 			"lineWidth": 160
 		}
 	},
+	"linter": {
+		"rules": {
+			"correctness": {
+				"noUnknownMediaFeatureName": "off"
+			}
+		}
+	},
 	"files": {
 		"includes": ["**", "!index.min.css"]
 	}
