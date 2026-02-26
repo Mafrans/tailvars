@@ -4,5 +4,8 @@
 		"formatter": {
 			"lineWidth": 160
 		}
+	},
+	"files": {
+		"includes": ["**", "!index.min.css"]
 	}
 }

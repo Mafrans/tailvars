@@ -24,5 +24,12 @@
 	},
 	"license": "MIT",
 	"author": "Mafrans",
-	"main": "index.css"
+	"main": "index.min.css",
+	"devDependencies": {
+		"lightningcss-cli": "^1.31.1"
+	},
+	"scripts": {
+		"build": "lightningcss --minify --bundle index.css -o index.min.css",
+		"prepublish": "npm run build"
+	}
 }
