@@ -220,48 +220,46 @@
 	--font-size-xl: 1.5rem;
 	--font-size-2xl: 2rem;
 	--font-size-3xl: 3rem;
+	--font-size-4xl: 5rem;
 	--font-size-fluid-xs: clamp(0.625rem, 0.582rem + 0.217vw, 0.75rem);
 	--font-size-fluid-sm: clamp(0.75rem, 0.707rem + 0.217vw, 0.875rem);
 	--font-size-fluid-md: clamp(0.875rem, 0.832rem + 0.217vw, 1rem);
 	--font-size-fluid-lg: clamp(1rem, 0.957rem + 0.217vw, 1.125rem);
-	--font-size-fluid-xl: clamp(1.25rem, 1.163rem + 0.435vw, 1.5rem);
-	--font-size-fluid-2xl: clamp(1.5rem, 1.326rem + 0.87vw, 2rem);
-	--font-size-fluid-3xl: clamp(2rem, 1.652rem + 1.739vw, 3rem);
+	--font-size-fluid-xl: clamp(1.125rem, 0.995rem + 0.652vw, 1.5rem);
+	--font-size-fluid-2xl: clamp(1.25rem, 0.989rem + 1.304vw, 2rem);
+	--font-size-fluid-3xl: clamp(1.5rem, 0.978rem + 2.609vw, 3rem);
+	--font-size-fluid-4xl: clamp(2rem, 0.957rem + 5.217vw, 5rem);
 	--font-body-weight: 400;
 	--font-heading-weight: 600;
+	--font-body: var(--font-sans);
+	--font-heading: var(--font-sans);
 }
 
 * {
-	--font-body: var(--font-sans);
-	--font-heading: var(--font-sans);
 	--font-body-xs: var(--font-body-weight) var(--font-size-xs) / 1.6 var(--font-body);
 	--font-body-sm: var(--font-body-weight) var(--font-size-sm) / 1.5 var(--font-body);
 	--font-body-md: var(--font-body-weight) var(--font-size-md) / 1.4 var(--font-body);
 	--font-body-lg: var(--font-body-weight) var(--font-size-lg) / 1.3 var(--font-body);
 	--font-body-xl: var(--font-body-weight) var(--font-size-xl) / 1.25 var(--font-body);
-	--font-body-2xl: var(--font-body-weight) var(--font-size-2xl) / 1.1 var(--font-body);
-	--font-body-3xl: var(--font-body-weight) var(--font-size-3xl) / 1.1 var(--font-body);
+	--font-body-2xl: var(--font-body-weight) var(--font-size-2xl) / 1.25 var(--font-body);
 	--font-body-fluid-xs: var(--font-body-weight) var(--font-size-fluid-xs) / 1.6 var(--font-body);
 	--font-body-fluid-sm: var(--font-body-weight) var(--font-size-fluid-sm) / 1.5 var(--font-body);
 	--font-body-fluid-md: var(--font-body-weight) var(--font-size-fluid-md) / 1.4 var(--font-body);
 	--font-body-fluid-lg: var(--font-body-weight) var(--font-size-fluid-lg) / 1.3 var(--font-body);
 	--font-body-fluid-xl: var(--font-body-weight) var(--font-size-fluid-xl) / 1.25 var(--font-body);
-	--font-body-fluid-2xl: var(--font-body-weight) var(--font-size-fluid-2xl) / 1.1 var(--font-body);
-	--font-body-fluid-3xl: var(--font-body-weight) var(--font-size-fluid-3xl) / 1.1 var(--font-body);
-	--font-heading-xs: var(--font-body-weight) var(--font-size-xs) / 1.6 var(--font-heading);
-	--font-heading-sm: var(--font-body-weight) var(--font-size-sm) / 1.5 var(--font-heading);
-	--font-heading-md: var(--font-body-weight) var(--font-size-md) / 1.4 var(--font-heading);
-	--font-heading-lg: var(--font-body-weight) var(--font-size-lg) / 1.3 var(--font-heading);
-	--font-heading-xl: var(--font-body-weight) var(--font-size-xl) / 1.25 var(--font-heading);
-	--font-heading-2xl: var(--font-body-weight) var(--font-size-2xl) / 1.1 var(--font-heading);
-	--font-heading-3xl: var(--font-body-weight) var(--font-size-3xl) / 1.1 var(--font-heading);
-	--font-heading-fluid-xs: var(--font-body-weight) var(--font-size-fluid-xs) / 1.6 var(--font-heading);
-	--font-heading-fluid-sm: var(--font-body-weight) var(--font-size-fluid-sm) / 1.5 var(--font-heading);
-	--font-heading-fluid-md: var(--font-body-weight) var(--font-size-fluid-md) / 1.4 var(--font-heading);
-	--font-heading-fluid-lg: var(--font-body-weight) var(--font-size-fluid-lg) / 1.3 var(--font-heading);
-	--font-heading-fluid-xl: var(--font-body-weight) var(--font-size-fluid-xl) / 1.25 var(--font-heading);
-	--font-heading-fluid-2xl: var(--font-body-weight) var(--font-size-fluid-2xl) / 1.1 var(--font-heading);
-	--font-heading-fluid-3xl: var(--font-body-weight) var(--font-size-fluid-3xl) / 1.1 var(--font-heading);
+	--font-body-fluid-2xl: var(--font-body-weight) var(--font-size-fluid-2xl) / 1.25 var(--font-body);
+	--font-heading-xs: var(--font-body-weight) var(--font-size-md) / 1.6 var(--font-heading);
+	--font-heading-sm: var(--font-body-weight) var(--font-size-lg) / 1.5 var(--font-heading);
+	--font-heading-md: var(--font-body-weight) var(--font-size-xl) / 1.4 var(--font-heading);
+	--font-heading-lg: var(--font-body-weight) var(--font-size-2xl) / 1.3 var(--font-heading);
+	--font-heading-xl: var(--font-body-weight) var(--font-size-3xl) / 1.25 var(--font-heading);
+	--font-heading-2xl: var(--font-body-weight) var(--font-size-4xl) / 1.25 var(--font-heading);
+	--font-heading-fluid-xs: var(--font-body-weight) var(--font-size-fluid-md) / 1.6 var(--font-heading);
+	--font-heading-fluid-sm: var(--font-body-weight) var(--font-size-fluid-lg) / 1.5 var(--font-heading);
+	--font-heading-fluid-md: var(--font-body-weight) var(--font-size-fluid-xl) / 1.4 var(--font-heading);
+	--font-heading-fluid-lg: var(--font-body-weight) var(--font-size-fluid-2xl) / 1.3 var(--font-heading);
+	--font-heading-fluid-xl: var(--font-body-weight) var(--font-size-fluid-3xl) / 1.25 var(--font-heading);
+	--font-heading-fluid-2xl: var(--font-body-weight) var(--font-size-fluid-4xl) / 1.1 var(--font-heading);
 }
 
 /* Spacing */

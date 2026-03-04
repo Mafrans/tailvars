@@ -31,5 +31,8 @@
 	"scripts": {
 		"build": "lightningcss --minify --bundle index.css -o index.min.css",
 		"prepublish": "npm run build"
+	},
+	"dependencies": {
+		"tailvars": "^1.1.2"
 	}
 }
