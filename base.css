@@ -1,11 +1,11 @@
 /** biome-ignore-all lint/suspicious/noUnknownAtRules: Custom media rules are not officially baseline CSS yet. */
 
 /* Media Queries */
-@custom-media --screen-xs (max-width: 359px);
-@custom-media --screen-sm (min-width: 360px) and (max-width: 479px);
-@custom-media --screen-md (min-width: 480px) and (max-width: 767px);
-@custom-media --screen-lg (min-width: 768px) and (max-width: 1023px);
-@custom-media --screen-xl (min-width: 1024px);
+@custom-media --screen-xs (min-width: 360px) and (max-width: 479px);
+@custom-media --screen-sm (min-width: 480px) and (max-width: 767px);
+@custom-media --screen-md (min-width: 768px) and (max-width: 1023px);
+@custom-media --screen-lg (min-width: 1024px) and (max-width: 1279px);
+@custom-media --screen-xl (min-width: 1280px);
 
 /* Shapes */
 :root {
@@ -206,6 +206,8 @@
 		left 0.075s var(--ease-both), right 0.075s var(--ease-both),
 		bottom 0.075s var(--ease-both), inset 0.075s var(--ease-both);
 	--transition: var(--transition-out);
+	--transition-slow: var(--transition-out-slow);
+	--transition-quick: var(--transition-out-quick);
 }
 
 /* Typography */
