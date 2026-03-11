@@ -1,7 +1,7 @@
 import { css, html, LitElement } from "lit";
-import { GlobalCSSMixin } from "../global-css-mixin";
 import { map } from "lit/directives/map.js";
 import { when } from "lit/directives/when.js";
+import { GlobalCSSMixin } from "../global-css-mixin";
 
 /**
  * An example element.
@@ -22,7 +22,6 @@ export class TableOfContents extends GlobalCSSMixin(LitElement) {
 
 	static styles = css`
     ul {
-      min-width: 200px;
       border-radius: var(--rounded-md);
       border: 1px solid var(--color-slate-300);
       padding: var(--size-1);

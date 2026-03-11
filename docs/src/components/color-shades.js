@@ -15,6 +15,11 @@ export class ColorShades extends GlobalCSSMixin(LitElement) {
 		color: {},
 	};
 
+	copyShade(shade) {
+		navigator.clipboard.writeText(`--color-${this.color}-${shade}`);
+		alert(`Copied "--color-${this.color}-${shade}"`);
+	}
+
 	render() {
 		return html`
 			<h3>--color-${this.color}</h3>
@@ -22,12 +27,12 @@ export class ColorShades extends GlobalCSSMixin(LitElement) {
         <div class="spacer"></div>
 			  ${map(shades, (shade) => {
 					return html`
-              <article class="shade" style="
+              <button @click=${() => this.copyShade(shade)} class="shade" style="
                 background: var(--color-${this.color}-${shade});
                 color: ${shade > 400 ? "white" : "black"}
               ">
                 ${shade}
-              </article>
+              </button>
             `;
 				})}
       </article>
@@ -65,13 +70,18 @@ export class ColorShades extends GlobalCSSMixin(LitElement) {
 
     .shade {
       aspect-ratio: 3/2;
+      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       font: var(--font-heading-sm);
       padding: var(--size-3);
-
       box-shadow: inset 0 0 0 1px var(--color-slate-400);
+      transition: var(--transition-quick);
+
+      &:hover {
+        opacity: 60%;
+      }
     }
   `;
 }

@@ -5,71 +5,94 @@
 @import "@fontsource/ibm-plex-serif/400-italic";
 
 :root {
-	--font-body: "IBM Plex Sans";
-	--font-heading: "VT323";
+  --font-body: "IBM Plex Sans";
+  --font-heading: "VT323";
 }
 
 body {
-	font: var(--font-body-md);
+  font: var(--font-body-md);
 }
 
 code,
 pre {
-	font-family: var(--font-mono);
+  font-family: var(--font-mono);
 }
 
 a {
-	font-family: "IBM Plex Serif", serif;
-	font-style: italic;
-	color: var(--color-indigo-700);
+  font-family: "IBM Plex Serif", serif;
+  font-style: italic;
+  color: var(--color-indigo-700);
 
-	&:hover {
-		opacity: 60%;
-	}
+  &:hover {
+    opacity: 60%;
+  }
 }
 
 * {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .container {
-	--gap-size: var(--size-6);
+  --gap-size: var(--size-6);
+  --sidebar-min-width: 150px;
+  --sidebar-max-width: 200px;
 
-	display: grid;
-	gap: 0 var(--gap-size);
-	grid-template-columns: 1fr min(calc(100% - 2 * var(--gap-size)), var(--screen-width-md)) 1fr;
+  display: grid;
+  grid-template-columns: 0 1fr 0;
+  gap: 0 var(--gap-size);
 
-	& > * {
-		grid-column: 2;
+  @media (--screen-md) or (--screen-lg) or (--screen-xl) {
+    grid-template-columns:
+      0
+      1fr
+      min(calc(100% - 4 * var(--gap-size)), var(--screen-width-lg))
+      1fr
+      0;
+  }
 
-		&.no-container {
-			grid-column: 1 / -1;
-		}
+  &:has(.sidebar) {
+    @media (--screen-md) or (--screen-lg) {
+      grid-template-columns:
+        1fr
+        var(--sidebar-min-width)
+        min(
+          calc(100% - 4 * var(--gap-size) - var(--sidebar-min-width)),
+          var(--screen-width-lg)
+        )
+        1fr;
+    }
+  }
 
-		&.sidebar {
-			grid-column: 1;
-			grid-row: auto / span 999;
-			display: flex;
-			flex-direction: column;
-			gap: var(--size-2);
-			margin-left: var(--gap-size);
+  & > * {
+    grid-column: 2;
 
-			& > * {
-				position: sticky;
-				top: var(--size-8);
-			}
-		}
-	}
+    @media (--screen-md) or (--screen-lg) or (--screen-xl) {
+      grid-column: 3;
+    }
 
-	@media (--screen-xs) or (--screen-sm) {
-		grid-template-columns: 0 1fr 0;
+    &.no-container {
+      grid-column: 1 / -1;
+    }
+  }
 
-		& .sidebar {
-			display: none;
-		}
-	}
+  & .sidebar {
+    display: none;
+    grid-column: 2;
+    grid-row: auto / span 999;
+    flex-direction: column;
+    width: 100%;
+    min-width: var(--sidebar-min-width);
+    max-width: var(--sidebar-max-width);
+    justify-self: flex-end;
+    gap: var(--size-2);
 
-	@media (--screen-lg) or (--screen-md) {
-		grid-template-columns: 1fr min(calc(100% - 2 * var(--gap-size)), var(--screen-width-md)) 1fr;
-	}
+    @media (--screen-md) or (--screen-lg) or (--screen-xl) {
+      display: flex;
+    }
+
+    & > * {
+      position: sticky;
+      top: var(--size-8);
+    }
+  }
 }

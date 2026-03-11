@@ -1,5 +1,3 @@
-import { css, html, LitElement } from "lit";
-import { GlobalCSSMixin } from "../global-css-mixin";
 import {
 	AnimationBounce,
 	Blur,
@@ -19,6 +17,8 @@ import {
 	Sparkles,
 	SparklesAlt,
 } from "@boxicons/js";
+import { css, html, LitElement } from "lit";
+import { GlobalCSSMixin } from "../global-css-mixin";
 /**
  * An example element.
  *
@@ -49,7 +49,7 @@ export class IndexPage extends GlobalCSSMixin(LitElement) {
             <feature-list-item .icon=${LayoutCheck} title="Native">
               It's just CSS. Seriously. No build tools needed, no JavaScript imports or plugins. Works out of the box.
             </feature-list-item>
-            <feature-list-item .icon=${MagicWand}		 title="Flexible">
+            <feature-list-item .icon=${MagicWand} title="Flexible">
               Tailvars leverages composition to get around common limitations with CSS custom properties.
             </feature-list-item>
           </feature-list>
@@ -63,7 +63,7 @@ export class IndexPage extends GlobalCSSMixin(LitElement) {
               <table-of-contents-item .icon=${Maximize} target="spacing">Spacing</table-of-contents-item>
               <table-of-contents-item .icon=${EaseInOut} target="transitions">Transitions</table-of-contents-item>
               <table-of-contents-item .icon=${SparklesAlt} target="effects">Effects</table-of-contents-item>
-              <table-of-contents-item .icon=${Shapes} target="effects">Shapes</table-of-contents-item>
+              <table-of-contents-item .icon=${Shapes} target="shapes">Shapes</table-of-contents-item>
             </table-of-contents>
           </aside>
 
@@ -99,6 +99,31 @@ export class IndexPage extends GlobalCSSMixin(LitElement) {
             </color-box>
             <doc-colors-content />
           </section>
+
+          <section id="typography">
+            <h2>Typography</h2>
+            <p>🛠 Work in progress</p>
+          </section>
+
+          <section id="spacing">
+            <h2>Spacing</h2>
+            <p>🛠 Work in progress</p>
+          </section>
+
+          <section id="transitions">
+            <h2>Transitions</h2>
+            <p>🛠 Work in progress</p>
+          </section>
+
+          <section id="effects">
+            <h2>Effects</h2>
+            <p>🛠 Work in progress</p>
+          </section>
+
+          <section id="shapes">
+            <h2>Shapes</h2>
+            <p>🛠 Work in progress</p>
+          </section>
         </div>
       </main>
     `;
@@ -106,7 +131,7 @@ export class IndexPage extends GlobalCSSMixin(LitElement) {
 
 	static styles = css`
     section {
-      margin: var(--size-12) 0;
+      padding: var(--size-12) 0;
 
       & h2 {
         font: var(--font-heading-lg)
