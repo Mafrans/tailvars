@@ -1,5 +1,5 @@
 import { css, html, LitElement } from "lit";
-import { GlobalCSSMixin } from "./global-css-mixin";
+import { GlobalCSSMixin } from "../global-css-mixin";
 /**
  * An example element.
  *
@@ -40,7 +40,7 @@ export class AboutSection extends GlobalCSSMixin(LitElement) {
 
     section {
       padding-top: min(8vw, var(--size-12));
-      padding-bottom: min(8vw, var(--size-12));
+      padding-bottom: min(8vw, var(--size-8));
     }
 
     h2 {

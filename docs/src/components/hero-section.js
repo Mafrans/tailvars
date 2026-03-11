@@ -1,5 +1,5 @@
 import { css, html, LitElement } from "lit";
-import { GlobalCSSMixin } from "./global-css-mixin.js";
+import { GlobalCSSMixin } from "../global-css-mixin.js";
 /**
  * An example element.
  *
@@ -30,7 +30,8 @@ export class HeroSection extends GlobalCSSMixin(LitElement) {
     section {
       padding-top: 12vw;
       padding-bottom: 12vw;
-      background-color: var(--color-indigo-100);
+      background-color: var(--color-slate-200);
+      color: var(--color-indigo-950);
       background-image: url("/hero-texture.webp");
       background-size: 100%;
       background-fit: cover;
@@ -38,7 +39,6 @@ export class HeroSection extends GlobalCSSMixin(LitElement) {
 
       & h1 {
         font: var(--font-heading-fluid-2xl);
-        color: var(--color-indigo-950);
 
         &::after {
           content: "";
@@ -50,7 +50,7 @@ export class HeroSection extends GlobalCSSMixin(LitElement) {
           mix-blend-mode: hard-light;
           width: 1ch;
           aspect-ratio: 1/2;
-          background-color: var(--color-indigo-700);
+          background-color: var(--color-indigo-600);
           animation: 2s steps(1) infinite blink;
         }
       }
@@ -58,7 +58,6 @@ export class HeroSection extends GlobalCSSMixin(LitElement) {
       & p {
         --color-opacity: 90%;
         font: var(--font-heading-fluid-md);
-        color: var(--color-indigo-900);
       }
     }
 

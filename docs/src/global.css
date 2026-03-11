@@ -1,8 +1,11 @@
 @import "tailvars";
 @import "tailvars/preflight" layer(preflight);
 @import "@fontsource/vt323";
+@import "@fontsource/ibm-plex-sans";
+@import "@fontsource/ibm-plex-serif/400-italic";
 
 :root {
+	--font-body: "IBM Plex Sans";
 	--font-heading: "VT323";
 }
 
@@ -15,26 +18,58 @@ pre {
 	font-family: var(--font-mono);
 }
 
+a {
+	font-family: "IBM Plex Serif", serif;
+	font-style: italic;
+	color: var(--color-indigo-700);
+
+	&:hover {
+		opacity: 60%;
+	}
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
 .container {
 	--gap-size: var(--size-6);
 
 	display: grid;
 	gap: 0 var(--gap-size);
-	grid-template-columns: 1fr min(calc(100% - 2 * var(--gap-size)), var(--screen-width-lg)) 1fr;
+	grid-template-columns: 1fr min(calc(100% - 2 * var(--gap-size)), var(--screen-width-md)) 1fr;
 
 	& > * {
 		grid-column: 2;
-	}
 
-	& .no-container {
-		grid-column: 1 / -1;
+		&.no-container {
+			grid-column: 1 / -1;
+		}
+
+		&.sidebar {
+			grid-column: 1;
+			grid-row: auto / span 999;
+			display: flex;
+			flex-direction: column;
+			gap: var(--size-2);
+			margin-left: var(--gap-size);
+
+			& > * {
+				position: sticky;
+				top: var(--size-8);
+			}
+		}
 	}
 
 	@media (--screen-xs) or (--screen-sm) {
-		--gap-size: var(--size-2);
+		grid-template-columns: 0 1fr 0;
+
+		& .sidebar {
+			display: none;
+		}
 	}
 
-	@media (--screen-lg) or (--screen-md) or (--screen-sm) or (--screen-xs) {
+	@media (--screen-lg) or (--screen-md) {
 		grid-template-columns: 1fr min(calc(100% - 2 * var(--gap-size)), var(--screen-width-md)) 1fr;
 	}
 }
