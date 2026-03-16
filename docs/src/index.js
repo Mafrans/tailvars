@@ -1,6 +1,8 @@
 import "./components/about-section.js";
 import "./components/color-box.js";
 import "./components/color-shades.js";
+import "./components/color-opacity-preview.js";
+import "./components/color-opacity-slider.js";
 import "./components/feature-list.js";
 import "./components/feature-list-item.js";
 import "./components/hero-section.js";

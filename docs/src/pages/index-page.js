@@ -1,20 +1,12 @@
 import {
-	AnimationBounce,
-	Blur,
 	Capitalize,
-	DrawAhead,
 	EaseInOut,
-	EaseOut,
 	GridLines3,
 	LayoutCheck,
 	MagicWand,
 	Maximize,
-	Motion,
-	MotionAlt,
 	Palette,
-	RowResize,
 	Shapes,
-	Sparkles,
 	SparklesAlt,
 } from "@boxicons/js";
 import { css, html, LitElement } from "lit";
@@ -97,7 +89,11 @@ export class IndexPage extends GlobalCSSMixin(LitElement) {
              	<color-shades color="stone"></color-shades>
              	<color-shades color="olive"></color-shades>
             </color-box>
-            <doc-colors-content />
+
+            <h3>Opacity</h3>
+            <p>While it is not easily possible to create opacity-variants for each shade of colors, it's possible to handle opacity through a system of custom properties. In tailvars, each color respects the opacity variables above it, in the following order of precedence:</p>
+            <color-opacity-preview></color-opacity-preview>
+            <p><small>Try it out! Click on the sliders to enable/disable the corresponding variable.</small></p>
           </section>
 
           <section id="typography">
@@ -135,6 +131,15 @@ export class IndexPage extends GlobalCSSMixin(LitElement) {
 
       & h2 {
         font: var(--font-heading-lg)
+      }
+
+      & h3 {
+        margin-top: var(--size-6);
+        font: var(--font-heading-md);
+      }
+
+      & p {
+        max-width: var(--screen-width-md);
       }
     }
 
