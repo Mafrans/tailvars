@@ -13,7 +13,12 @@ import "./components/table-of-contents-item.js";
 import "./pages/index-page.js";
 import UniversalRouter from "universal-router";
 
-const routes = [{ action: () => `<index-page />` }];
+const routes = [
+	{
+		path: "/tailvars",
+		children: [{ action: () => `<index-page />` }],
+	},
+];
 
 const router = new UniversalRouter(routes);
 
