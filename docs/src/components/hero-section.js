@@ -1,4 +1,5 @@
-import { css, html, LitElement } from "lit";
+import { css, html, LitElement, unsafeCSS } from "lit";
+import heroTexture from "../assets/hero-texture.webp";
 import { GlobalCSSMixin } from "../global-css-mixin.js";
 /**
  * An example element.
@@ -32,7 +33,7 @@ export class HeroSection extends GlobalCSSMixin(LitElement) {
       padding-bottom: 12vw;
       background-color: var(--color-slate-200);
       color: var(--color-indigo-950);
-      background-image: url("/hero-texture.webp");
+      background-image: url(${unsafeCSS(heroTexture)});
       background-size: 100%;
       background-fit: cover;
       background-blend-mode: overlay;
