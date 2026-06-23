@@ -9,6 +9,10 @@
   --font-heading: "VT323";
 }
 
+:host {
+  display: block;
+}
+
 body {
   font: var(--font-body-md);
 }
@@ -18,18 +22,44 @@ pre {
   font-family: var(--font-mono);
 }
 
-a {
-  font-family: "IBM Plex Serif", serif;
-  font-style: italic;
-  color: var(--color-indigo-700);
-
-  &:hover {
-    opacity: 60%;
-  }
-}
-
 * {
   scroll-behavior: smooth;
+}
+
+.richtext {
+  & p {
+    margin-bottom: var(--size-3);
+  }
+
+  & h1 {
+    font: var(--font-heading-fluid-xl);
+    margin-bottom: var(--size-3);
+  }
+
+  & h2 {
+    font: var(--font-heading-fluid-lg);
+    margin-bottom: var(--size-2);
+  }
+
+  & h3 {
+    font: var(--font-heading-fluid-md);
+    margin-bottom: var(--size-2);
+  }
+
+  & h4 {
+    font: var(--font-heading-fluid-sm);
+    margin-bottom: var(--size-1);
+  }
+
+  a {
+    font-family: "IBM Plex Serif", serif;
+    font-style: italic;
+    color: var(--color-indigo-700);
+
+    &:hover {
+      opacity: 60%;
+    }
+  }
 }
 
 .container {

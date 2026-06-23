@@ -1,4 +1,3 @@
-import "./components/about-section.js";
 import "./components/color-box.js";
 import "./components/color-shades.js";
 import "./components/color-opacity-preview.js";
@@ -10,18 +9,20 @@ import "./components/box-icon.js";
 import "./components/sidebar-layout.js";
 import "./components/table-of-contents.js";
 import "./components/table-of-contents-item.js";
+import "./components/font-preset.js";
+import "./components/type-box.js";
 import "./pages/index-page.js";
 import UniversalRouter from "universal-router";
 
 const routes = [
-	{
-		path: "/tailvars",
-		children: [{ action: () => `<index-page />` }],
-	},
+  {
+    path: "/tailvars",
+    children: [{ action: () => `<index-page />` }],
+  },
 ];
 
 const router = new UniversalRouter(routes);
 
 router.resolve(location.pathname).then((html) => {
-	document.body.innerHTML = html;
+  document.body.innerHTML = html;
 });
