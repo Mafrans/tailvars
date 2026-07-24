@@ -34,6 +34,14 @@ jobs:
         run: npm ci
         working-directory: ./docs
 
+      - name: Install root dependencies
+        run: npm install
+        working-directory: ..
+
+      - name: Build CSS
+        run: npm run build
+        working-directory: ..
+
       - name: Build documentation
         run: npm run build
         working-directory: ./docs
