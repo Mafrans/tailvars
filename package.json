@@ -26,10 +26,11 @@
   "author": "Mafrans",
   "main": "index.min.css",
   "devDependencies": {
+    "husky": "^9.1.7",
     "lightningcss-cli": "^1.31.1"
   },
   "scripts": {
     "build": "lightningcss --minify --bundle index.css -o index.min.css",
-    "prepublish": "npm run build"
+    "postinstall": "husky"
   }
 }
