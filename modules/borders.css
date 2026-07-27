@@ -5,9 +5,4 @@
     --rounded-lg: 0.75rem;
     --rounded-xl: 1rem;
     --rounded-full: calc(infinity * 1px);
-    --screen-width-xs: 360px;
-    --screen-width-sm: 480px;
-    --screen-width-md: 768px;
-    --screen-width-lg: 1024px;
-    --screen-width-xl: 1280px;
 }

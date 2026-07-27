@@ -1,4 +1,10 @@
 :root {
+    --screen-width-xs: 360px;
+    --screen-width-sm: 480px;
+    --screen-width-md: 768px;
+    --screen-width-lg: 1024px;
+    --screen-width-xl: 1280px;
+
     --size-0: 0rem;
     --size-1: 0.25rem;
     --size-2: 0.5rem;
