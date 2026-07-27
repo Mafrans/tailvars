@@ -30,6 +30,8 @@ then `@include` tailvars in your global CSS file:
 ...
 ```
 
+This adds all Tailvars modules to your stylesheet, if you wish to add specific modules, you can import them individually by targeting the appropriate .css files.
+
 ### Preflight
 
 Tailvars optionally includes a copy of the [TailwindCSS Preflight styles](https://tailwindcss.com/docs/preflight), licensed under MIT. Preflight is a stylesheet built on top of modern-normalize which tries its best to remove as many styles as possible from the default web look and feel, which I find is useful for starting from a blank slate rather than having to fight the browser every step of the way. Include it by adding:
@@ -42,3 +44,40 @@ Tailvars optionally includes a copy of the [TailwindCSS Preflight styles](https:
 ```
 
 to your global CSS file.
+
+## Modules
+
+### Colors
+
+Tailvars includes the 28 TailwindCSS colors, described in OKLCH format. Each color exists in 12 shades: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 and 950.
+
+| Color                          | Name    | Property            |
+| ------------------------------ | ------- | ------------------- |
+| <div class="swatch white" />   | White   | `--color-white`     |
+| <div class="swatch black" />   | Black   | `--color-black`     |
+| <div class="swatch amber" />   | Amber   | `--color-amber-*`   |
+| <div class="swatch blue" />    | Blue    | `--color-blue-*`    |
+| <div class="swatch cyan" />    | Cyan    | `--color-cyan-*`    |
+| <div class="swatch emerald" /> | Emerald | `--color-emerald-*` |
+| <div class="swatch fuchsia" /> | Fuchsia | `--color-fuchsia-*` |
+| <div class="swatch gray" />    | Gray    | `--color-gray-*`    |
+| <div class="swatch green" />   | Green   | `--color-green-*`   |
+| <div class="swatch indigo" />  | Indigo  | `--color-indigo-*`  |
+| <div class="swatch lime" />    | Lime    | `--color-lime-*`    |
+| <div class="swatch mauve" />   | Mauve   | `--color-mauve-*`   |
+| <div class="swatch mist" />    | Mist    | `--color-mist-*`    |
+| <div class="swatch neutral" /> | Neutral | `--color-neutral-*` |
+| <div class="swatch olive" />   | Olive   | `--color-olive-*`   |
+| <div class="swatch orange" />  | Orange  | `--color-orange-*`  |
+| <div class="swatch pink" />    | Pink    | `--color-pink-*`    |
+| <div class="swatch purple" />  | Purple  | `--color-purple-*`  |
+| <div class="swatch red" />     | Red     | `--color-red-*`     |
+| <div class="swatch rose" />    | Rose    | `--color-rose-*`    |
+| <div class="swatch sky" />     | Sky     | `--color-sky-*`     |
+| <div class="swatch slate" />   | Slate   | `--color-slate-*`   |
+| <div class="swatch stone" />   | Stone   | `--color-stone-*`   |
+| <div class="swatch taupe" />   | Taupe   | `--color-taupe-*`   |
+| <div class="swatch teal" />    | Teal    | `--color-teal-*`    |
+| <div class="swatch violet" />  | Violet  | `--color-violet-*`  |
+| <div class="swatch yellow" />  | Yellow  | `--color-yellow-*`  |
+| <div class="swatch zinc" />    | Zinc    | `--color-zinc-*`    |
