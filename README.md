@@ -8,7 +8,10 @@ Tailvars is a CSS custom-property library inspired by the style system created f
 
 ```css
 .my-component {
-    background-color: color-mix(var(--color-red-500) 5%, transparent); /* Red color at 5% transparency */
+  background-color: color-mix(
+    var(--color-red-500) 5%,
+    transparent
+  ); /* Red color at 5% transparency */
 }
 ```
 
@@ -32,4 +35,4 @@ The package is ~13kb gzipped, which is a relatively small size, but if you need 
 
 ## Documentation
 
-To be continued...
+Documentation is available at [https://mafrans.github.io/tailvars](https://mafrans.github.io/tailvars).

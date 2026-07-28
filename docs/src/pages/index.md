@@ -81,3 +81,17 @@ Tailvars includes the 28 TailwindCSS colors, described in OKLCH format. Each col
 | <div class="swatch violet" />  | Violet  | `--color-violet-*`  |
 | <div class="swatch yellow" />  | Yellow  | `--color-yellow-*`  |
 | <div class="swatch zinc" />    | Zinc    | `--color-zinc-*`    |
+
+#### Opacity
+
+Applying opacity to colors can be performed efficiently using the css `color-mix` function, and mixing your preferred color with transparent as such:
+
+```css
+.my-element {
+  background-color: color-mix(var(--color-red-500) 20%, transparent); // Red 500 with 20% opacity
+}
+```
+
+_Note: Some previous builds of Tailvars use `--color-opacity` properties for opacity, this was removed in 1.4.0 for performance reasons._
+
+###
