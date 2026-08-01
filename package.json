@@ -31,6 +31,6 @@
   },
   "scripts": {
     "build": "lightningcss --minify --bundle index.css -o index.min.css",
-    "postinstall": "husky"
+    "prepare": "husky"
   }
 }

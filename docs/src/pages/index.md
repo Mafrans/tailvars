@@ -51,36 +51,42 @@ to your global CSS file.
 
 Tailvars includes the 28 TailwindCSS colors, described in OKLCH format. Each color exists in 12 shades: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 and 950.
 
-| Color                          | Name    | Property            |
-| ------------------------------ | ------- | ------------------- |
-| <div class="swatch white" />   | White   | `--color-white`     |
-| <div class="swatch black" />   | Black   | `--color-black`     |
-| <div class="swatch amber" />   | Amber   | `--color-amber-*`   |
-| <div class="swatch blue" />    | Blue    | `--color-blue-*`    |
-| <div class="swatch cyan" />    | Cyan    | `--color-cyan-*`    |
-| <div class="swatch emerald" /> | Emerald | `--color-emerald-*` |
-| <div class="swatch fuchsia" /> | Fuchsia | `--color-fuchsia-*` |
-| <div class="swatch gray" />    | Gray    | `--color-gray-*`    |
-| <div class="swatch green" />   | Green   | `--color-green-*`   |
-| <div class="swatch indigo" />  | Indigo  | `--color-indigo-*`  |
-| <div class="swatch lime" />    | Lime    | `--color-lime-*`    |
-| <div class="swatch mauve" />   | Mauve   | `--color-mauve-*`   |
-| <div class="swatch mist" />    | Mist    | `--color-mist-*`    |
-| <div class="swatch neutral" /> | Neutral | `--color-neutral-*` |
-| <div class="swatch olive" />   | Olive   | `--color-olive-*`   |
-| <div class="swatch orange" />  | Orange  | `--color-orange-*`  |
-| <div class="swatch pink" />    | Pink    | `--color-pink-*`    |
-| <div class="swatch purple" />  | Purple  | `--color-purple-*`  |
-| <div class="swatch red" />     | Red     | `--color-red-*`     |
-| <div class="swatch rose" />    | Rose    | `--color-rose-*`    |
-| <div class="swatch sky" />     | Sky     | `--color-sky-*`     |
-| <div class="swatch slate" />   | Slate   | `--color-slate-*`   |
-| <div class="swatch stone" />   | Stone   | `--color-stone-*`   |
-| <div class="swatch taupe" />   | Taupe   | `--color-taupe-*`   |
-| <div class="swatch teal" />    | Teal    | `--color-teal-*`    |
-| <div class="swatch violet" />  | Violet  | `--color-violet-*`  |
-| <div class="swatch yellow" />  | Yellow  | `--color-yellow-*`  |
-| <div class="swatch zinc" />    | Zinc    | `--color-zinc-*`    |
+| **Color**                                                                      | **Name** | **Property**        |
+| ------------------------------------------------------------------------------ | -------- | ------------------- |
+|                                                                                |          |
+| Black & White                                                                  |          |                     |
+| <div class="swatch white"></div>                                               | White    | `--color-white`     |
+| <div class="swatch black"></div>                                               | Black    | `--color-black`     |
+|                                                                                |          |
+| Rainbow                                                                        |          |
+| <div class="swatch red"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>     | Red      | `--color-red-*`     |
+| <div class="swatch orange"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>  | Orange   | `--color-orange-*`  |
+| <div class="swatch amber"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>   | Amber    | `--color-amber-*`   |
+| <div class="swatch yellow"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>  | Yellow   | `--color-yellow-*`  |
+| <div class="swatch lime"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>    | Lime     | `--color-lime-*`    |
+| <div class="swatch green"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>   | Green    | `--color-green-*`   |
+| <div class="swatch emerald"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div> | Emerald  | `--color-emerald-*` |
+| <div class="swatch teal"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>    | Teal     | `--color-teal-*`    |
+| <div class="swatch cyan"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>    | Cyan     | `--color-cyan-*`    |
+| <div class="swatch sky"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>     | Sky      | `--color-sky-*`     |
+| <div class="swatch blue"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>    | Blue     | `--color-blue-*`    |
+| <div class="swatch indigo"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>  | Indigo   | `--color-indigo-*`  |
+| <div class="swatch violet"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>  | Violet   | `--color-violet-*`  |
+| <div class="swatch purple"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>  | Purple   | `--color-purple-*`  |
+| <div class="swatch fuchsia"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div> | Fuchsia  | `--color-fuchsia-*` |
+| <div class="swatch pink"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>    | Pink     | `--color-pink-*`    |
+| <div class="swatch rose"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>    | Rose     | `--color-rose-*`    |
+|                                                                                |          |
+| Grays                                                                          |          |
+| <div class="swatch olive"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>   | Olive    | `--color-olive-*`   |
+| <div class="swatch taupe"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>   | Taupe    | `--color-taupe-*`   |
+| <div class="swatch stone"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>   | Stone    | `--color-stone-*`   |
+| <div class="swatch neutral"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div> | Neutral  | `--color-neutral-*` |
+| <div class="swatch zinc"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>    | Zinc     | `--color-zinc-*`    |
+| <div class="swatch gray"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>    | Gray     | `--color-gray-*`    |
+| <div class="swatch slate"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>   | Slate    | `--color-slate-*`   |
+| <div class="swatch mist"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>    | Mist     | `--color-mist-*`    |
+| <div class="swatch mauve"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>   | Mauve    | `--color-mauve-*`   |
 
 #### Opacity
 
@@ -88,7 +94,10 @@ Applying opacity to colors can be performed efficiently using the css `color-mix
 
 ```css
 .my-element {
-  background-color: color-mix(var(--color-red-500) 20%, transparent); // Red 500 with 20% opacity
+  background-color: color-mix(
+    var(--color-red-500) 20%,
+    transparent
+  ); /* Red 500 with 20% opacity */
 }
 ```
 
