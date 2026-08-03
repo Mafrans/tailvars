@@ -92,6 +92,127 @@ Applying opacity to colors can be performed efficiently using the css `color-mix
 }
 ```
 
-_Note: Some previous builds of Tailvars use `--color-opacity` properties for opacity, this was removed in 1.4.0 for performance reasons._
+_Note: Some early builds of Tailvars use `--color-opacity` properties for opacity, this was removed in 1.4.0 for performance reasons._
 
-###
+### Typography
+
+Tailvars defines two separate typographic scales using the same set of 6 sizes, this system is intended to apply a clear separation between heading text (larger, usually a more complex font) and body text (must be readable at small sizes).
+
+#### Headings
+
+| Property           | Preview                                                  |
+| ------------------ | -------------------------------------------------------- |
+| --font-heading-xs  | <p style="font: var(--font-heading-xs)">Heading XS</p>   |
+| --font-heading-sm  | <p style="font: var(--font-heading-sm)">Heading SM</p>   |
+| --font-heading-md  | <p style="font: var(--font-heading-md)">Heading MD</p>   |
+| --font-heading-lg  | <p style="font: var(--font-heading-lg)">Heading LG</p>   |
+| --font-heading-xl  | <p style="font: var(--font-heading-xl)">Heading XL</p>   |
+| --font-heading-2xl | <p style="font: var(--font-heading-2xl)">Heading 2XL</p> |
+
+#### Body
+
+| Property        | Preview                                            |
+| --------------- | -------------------------------------------------- |
+| --font-body-xs  | <p style="font: var(--font-body-xs)">Body XS</p>   |
+| --font-body-sm  | <p style="font: var(--font-body-sm)">Body SM</p>   |
+| --font-body-md  | <p style="font: var(--font-body-md)">Body MD</p>   |
+| --font-body-lg  | <p style="font: var(--font-body-lg)">Body LG</p>   |
+| --font-body-xl  | <p style="font: var(--font-body-xl)">Body XL</p>   |
+| --font-body-2xl | <p style="font: var(--font-body-2xl)">Body 2XL</p> |
+
+#### Fluid typography
+
+There are also typographic variants which scale based on your display width, these are available as `--font-heading-fluid-*` and `--font-body-fluid-*`.
+
+#### Switching fonts
+
+The fonts used by Tailvars' typography presets can be switched out by setting the `--font-heading` or `--font-body` property in the CSS `:root`. Note that because presets are defined on the document's `body`-tag, these overrides will only be respected when applied to the `:root` psuedo-class. Tailvars also provides fallback font properties in the form of `--font-sans`, `--font-serif` and `--font-mono`; it is recommended to include these in your font overrides.
+
+```css
+:root {
+  --font-heading: "IBM Plex Serif", var(--font-serif);
+}
+```
+
+#### Size overrides
+
+While not recommended, it is possible to override the sizes of each typography preset by setting the `--font-size-*` and `--font-size-fluid-*` group of properties.
+
+| Property              | Size                                         | Used by                                        |
+| --------------------- | -------------------------------------------- | ---------------------------------------------- |
+| --font-size-xs        | 0.75rem                                      | --font-body-xs                                 |
+| --font-size-sm        | 0.875rem                                     | --font-body-sm                                 |
+| --font-size-md        | 1rem                                         | --font-body-md, --font-heading-xs              |
+| --font-size-lg        | 1.25rem                                      | --font-body-lg, --font-heading-sm              |
+| --font-size-xl        | 1.5rem                                       | --font-body-xl, --font-heading-md              |
+| --font-size-2xl       | 2rem                                         | --font-body-2xl, --font-heading-lg             |
+| --font-size-3xl       | 3rem                                         | --font-heading-xl                              |
+| --font-size-4xl       | 5rem                                         | --font-heading-2xl                             |
+| --font-size-fluid-xs  | clamp(0.625rem, 0.582rem + 0.217vw, 0.75rem) | --font-body-fluid-xs                           |
+| --font-size-fluid-sm  | clamp(0.75rem, 0.707rem + 0.217vw, 0.875rem) | --font-body-fluid-sm                           |
+| --font-size-fluid-md  | clamp(0.875rem, 0.832rem + 0.217vw, 1rem)    | --font-body-fluid-md, --font-heading-fluid-xs  |
+| --font-size-fluid-lg  | clamp(1rem, 0.957rem + 0.217vw, 1.125rem)    | --font-body-fluid-lg, --font-heading-fluid-sm  |
+| --font-size-fluid-xl  | clamp(1.125rem, 0.995rem + 0.652vw, 1.5rem)  | --font-body-fluid-xl, --font-heading-fluid-md  |
+| --font-size-fluid-2xl | clamp(1.25rem, 0.989rem + 1.304vw, 2rem)     | --font-body-fluid-2xl, --font-heading-fluid-lg |
+| --font-size-fluid-3xl | clamp(1.5rem, 0.978rem + 2.609vw, 3rem)      | --font-heading-fluid-xl                        |
+| --font-size-fluid-4xl | clamp(2rem, 0.957rem + 5.217vw, 5rem)        | --font-heading-fluid-2xl                       |
+
+#### Weight overrides
+
+It is possible to override the weight of heading and body text separately using the `--font-heading-weight` and `--font-body-weight`, but not currently for individual sizes.
+
+### Sizes
+
+Tailvars follows the same 4px sizing grid that TailwindCSS uses, with the caveat that it does not include any fractional sizes. While we suggest that you avoid sizes smaller than 4px, you can always extend the system by writing your own sizing variables, like `--size-0_5: 2px;` or `--size-1_5: 6px`
+
+The available sizes are:
+
+<div class="sizes">
+    <div class="items">
+        <div data-size="0" data-px="0" style="--size:var(--size-0);"></div>
+        <div data-size="1" data-px="4" style="--size:var(--size-1);"></div>
+        <div data-size="2" data-px="8" style="--size:var(--size-2);"></div>
+        <div data-size="3" data-px="12" style="--size:var(--size-3);"></div>
+        <div data-size="4" data-px="16" style="--size:var(--size-4);"></div>
+        <div data-size="5" data-px="20" style="--size:var(--size-5);"></div>
+        <div data-size="6" data-px="24" style="--size:var(--size-6);"></div>
+        <div data-size="7" data-px="28" style="--size:var(--size-7);"></div>
+        <div data-size="8" data-px="32" style="--size:var(--size-8);"></div>
+        <div data-size="9" data-px="36" style="--size:var(--size-9);"></div>
+        <div data-size="10" data-px="40" style="--size:var(--size-10);"></div>
+        <div data-size="11" data-px="44" style="--size:var(--size-11);"></div>
+        <div data-size="12" data-px="48" style="--size:var(--size-12);"></div>
+        <div data-size="14" data-px="56" style="--size:var(--size-14);"></div>
+        <div data-size="16" data-px="64" style="--size:var(--size-16);"></div>
+        <div data-size="18" data-px="72" style="--size:var(--size-18);"></div>
+        <div data-size="20" data-px="80" style="--size:var(--size-20);"></div>
+        <div data-size="22" data-px="88" style="--size:var(--size-22);"></div>
+        <div data-size="24" data-px="96" style="--size:var(--size-24);"></div>
+        <div data-size="28" data-px="112" style="--size:var(--size-28);"></div>
+        <div data-size="32" data-px="128" style="--size:var(--size-32);"></div>
+        <div data-size="36" data-px="144" style="--size:var(--size-36);"></div>
+        <div data-size="40" data-px="160" style="--size:var(--size-40);"></div>
+        <div data-size="44" data-px="176" style="--size:var(--size-44);"></div>
+        <div data-size="48" data-px="192" style="--size:var(--size-48);"></div>
+        <div data-size="52" data-px="208" style="--size:var(--size-52);"></div>
+        <div data-size="56" data-px="224" style="--size:var(--size-56);"></div>
+        <div data-size="60" data-px="240" style="--size:var(--size-60);"></div>
+        <div data-size="64" data-px="256" style="--size:var(--size-64);"></div>
+        <div data-size="68" data-px="272" style="--size:var(--size-68);"></div>
+        <div data-size="72" data-px="288" style="--size:var(--size-72);"></div>
+        <div data-size="76" data-px="304" style="--size:var(--size-76);"></div>
+        <div data-size="80" data-px="320" style="--size:var(--size-80);"></div>
+        <div data-size="84" data-px="336" style="--size:var(--size-84);"></div>
+        <div data-size="88" data-px="352" style="--size:var(--size-88);"></div>
+        <div data-size="92" data-px="368" style="--size:var(--size-92);"></div>
+        <div data-size="96" data-px="384" style="--size:var(--size-96);"></div>
+        <div data-size="100" data-px="400" style="--size:var(--size-100);"></div>
+        <div data-size="104" data-px="416" style="--size:var(--size-104);"></div>
+        <div data-size="108" data-px="432" style="--size:var(--size-108);"></div>
+        <div data-size="112" data-px="448" style="--size:var(--size-112);"></div>
+        <div data-size="116" data-px="464" style="--size:var(--size-116);"></div>
+        <div data-size="120" data-px="480" style="--size:var(--size-120);"></div>
+        <div data-size="124" data-px="496" style="--size:var(--size-124);"></div>
+        <div data-size="128" data-px="512" style="--size:var(--size-128);"></div>
+    </div>
+</div>
