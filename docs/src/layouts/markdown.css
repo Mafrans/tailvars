@@ -558,3 +558,46 @@ blockquote {
         --950: var(--color-zinc-950);
     }
 }
+
+.sizes {
+    overflow: scroll;
+    width: 100%;
+    padding: var(--size-2);
+    padding-top: var(--size-6);
+    background-color: var(--color-gray-200);
+    border-radius: var(--rounded-xs);
+
+    .items {
+        display: flex;
+        align-items: center;
+        gap: var(--size-4);
+        width: max-content;
+
+        --size: 0;
+        --min-size: var(--size-8);
+
+        & > div {
+            position: relative;
+            width: var(--size);
+            height: var(--size);
+            background-color: var(--color-blue-200);
+            margin-right: max(0rem, calc(var(--min-size) - var(--size)));
+
+            &[data-size]::before {
+                position: absolute;
+                bottom: 100%;
+                content: attr(data-size);
+                font: var(--font-body-xs);
+                font-family: var(--font-mono);
+            }
+
+            &[data-px]::after {
+                position: absolute;
+                top: 100%;
+                content: attr(data-px) "px";
+                font: var(--font-body-xs);
+                font-family: var(--font-mono);
+            }
+        }
+    }
+}
