@@ -19,11 +19,3 @@ import "tailvars";
 ```
 
 The package is ~13kb gzipped, which is a relatively small size, but if you need to reduce the size further you can make use of the [postcss-jit-props](https://www.npmjs.com/package/postcss-jit-props/) postcss plugin to only import the props you need for your project.
-
-## Documentation
-
-To be continued...
-
-## Known bugs
-
-`--color-opacity` does not work as expected, and always falls back to 100%.
