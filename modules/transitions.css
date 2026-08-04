@@ -106,9 +106,9 @@
     --transition-both-exponential-quick: 0.075s var(--ease-both-exponential);
     --transition-both-circular-quick: 0.075s var(--ease-both-circular);
     --transition-both-overshoot-quick: 0.075s var(--ease-both-overshoot);
-    --transition: var(--transition-out);
-    --transition-slow: var(--transition-out-slow);
-    --transition-quick: var(--transition-out-quick);
+    --transition: var(--transition-out-quadratic);
+    --transition-slow: var(--transition-out-quadratic-slow);
+    --transition-quick: var(--transition-out-quadratic-quick);
 }
 
 :not(#_) * {
