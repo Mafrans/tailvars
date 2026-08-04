@@ -2,6 +2,19 @@
 
 Tailvars is a CSS custom-property library inspired by the style system created for [tailwindcss](https://tailwindcss.com). It includes properties for most common use cases.
 
+## Breaking changes as of 1.4.0
+
+`--color-opacity` options have been removed in 1.4.0 to address performance limitations. Please use `color-mix` as a native CSS alternative. For example:
+
+```css
+.my-component {
+  background-color: color-mix(
+    var(--color-red-500) 5%,
+    transparent
+  ); /* Red color at 5% transparency */
+}
+```
+
 ## Getting started
 
 As the project consists simply of a `index.css` file, it can be installed and used from javascript or from a css file.
@@ -22,8 +35,4 @@ The package is ~13kb gzipped, which is a relatively small size, but if you need 
 
 ## Documentation
 
-To be continued...
-
-## Known bugs
-
-`--color-opacity` does not work as expected, and always falls back to 100%.
+Documentation is available at [https://mafrans.github.io/tailvars](https://mafrans.github.io/tailvars).

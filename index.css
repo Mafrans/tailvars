@@ -1,2 +1,8 @@
-@import "./base.css";
-@import "./colors/index.css";
+@import "./modules/colors/all.css";
+@import "./modules/borders.css";
+@import "./modules/breakpoints.css";
+@import "./modules/filters.css";
+@import "./modules/shadows.css";
+@import "./modules/sizes.css";
+@import "./modules/transitions.css";
+@import "./modules/typography.css";
