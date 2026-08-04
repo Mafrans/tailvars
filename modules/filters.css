@@ -1,0 +1,12 @@
+:root {
+    --blur-xs: blur(4px);
+    --blur-sm: blur(8px);
+    --blur-md: blur(12px);
+    --blur-lg: blur(16px);
+    --blur-xl: blur(24px);
+    --blur-xxl: blur(40px);
+    --brighten: brightness(125%);
+    --darken: brightness(75%);
+    --saturate: saturate(150%);
+    --desaturate: saturate(50%);
+}
