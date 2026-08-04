@@ -1,35 +1,35 @@
 {
-	"name": "tailvars",
-	"version": "1.3.1",
-	"description": "A collection of tailwind-inspired css custom properties",
-	"keywords": [
-		"css",
-		"custom",
-		"properties",
-		"variables",
-		"css",
-		"variables",
-		"tailwind",
-		"tailwindcss",
-		"design",
-		"system"
-	],
-	"homepage": "https://github.com/Mafrans/tailvars#readme",
-	"bugs": {
-		"url": "https://github.com/Mafrans/tailvars/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Mafrans/tailvars.git"
-	},
-	"license": "MIT",
-	"author": "Mafrans",
-	"main": "index.min.css",
-	"devDependencies": {
-		"lightningcss-cli": "^1.31.1"
-	},
-	"scripts": {
-		"build": "lightningcss --minify --bundle index.css -o index.min.css",
-		"prepublish": "npm run build"
-	}
+  "name": "tailvars",
+  "version": "1.4.0",
+  "description": "A collection of tailwind-inspired css custom properties",
+  "keywords": [
+    "css",
+    "custom",
+    "properties",
+    "variables",
+    "css",
+    "variables",
+    "tailwind",
+    "tailwindcss",
+    "design",
+    "system"
+  ],
+  "homepage": "https://github.com/Mafrans/tailvars#readme",
+  "bugs": {
+    "url": "https://github.com/Mafrans/tailvars/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mafrans/tailvars.git"
+  },
+  "license": "MIT",
+  "author": "Mafrans",
+  "main": "index.min.css",
+  "devDependencies": {
+    "lightningcss-cli": "^1.31.1"
+  },
+  "scripts": {
+    "build": "lightningcss --minify --bundle index.css -o index.min.css",
+    "prepublish": "npm run build"
+  }
 }
